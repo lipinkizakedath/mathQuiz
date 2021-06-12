@@ -1,0 +1,28 @@
+<form [formGroup]="mathForm">
+  <div class="container">
+    <div class="equation">{{ a }} + {{ b }} <span class="mark">?</span></div>
+    <div class="answerSection">
+      <input class="ans" type="text" formControlName="answer" />
+    </div>
+  </div>
+</form>
+<div class="success">
+  <img
+    *ngIf="mathForm.valid"
+    src="../../assets/check.svg"
+    alt="Succss Message"
+    width="100px"
+    height="auto"
+  />
+  <h1 class="message">
+    <span style="color: #12d811" *ngIf="mathForm.valid"
+      >Good Job! you completed in
+      {{ secondsPerSolution | number: "1.1-2" }} seconds
+    </span>
+    <br />
+    <span style="color: #616f6b" *ngIf="avarageTimeTaken.length > 1"
+      >Average time taken {{ averageTime | number }} seconds</span
+    >
+  </h1>
+</div>
+<!-- <div class="average">Average time taken {{ averageTime | number }} seconds</div> -->

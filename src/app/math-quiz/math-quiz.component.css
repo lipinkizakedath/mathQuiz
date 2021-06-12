@@ -1,0 +1,47 @@
+.container {
+  width: 60vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-weight: 500;
+  color: crimson;
+}
+
+.mark {
+  color: darkgreen;
+}
+
+.answerSection {
+}
+
+.ans {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  color: brown;
+  border: none;
+  font-size: 80px;
+  border-bottom: 5px double coral;
+  text-align: center;
+}
+
+.ans:focus {
+  outline: none;
+}
+
+.success {
+  display: grid;
+  place-items: center;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.message {
+  font-size: 25px;
+  font-weight: 500;
+  color: #b8d811;
+  background-color: transparent;
+  margin-top: 10px;
+}
