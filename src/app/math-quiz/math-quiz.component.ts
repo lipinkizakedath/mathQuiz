@@ -42,8 +42,8 @@ export class MathQuizComponent implements OnInit {
       .subscribe(({ numberSolved, startTime }) => {
         this.secondsPerSolution =
           (new Date().getTime() - startTime.getTime()) / numberSolved / 1000;
-        this.avarageTimeTaken.push(this.secondsPerSolution);
 
+        this.avarageTimeTaken.push(this.secondsPerSolution);
         this.avgCalculator();
         this.setNewRandomValues();
       });
@@ -62,7 +62,7 @@ export class MathQuizComponent implements OnInit {
         b: this.randomNumber(),
         answer: '',
       });
-    }, 500);
+    }, 2000);
   }
 
   get a() {

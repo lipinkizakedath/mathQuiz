@@ -2,7 +2,12 @@
   <div class="container">
     <div class="equation">{{ a }} + {{ b }} <span class="mark">?</span></div>
     <div class="answerSection">
-      <input class="ans" type="text" formControlName="answer" />
+      <input
+        appValueHighlighter
+        class="ans"
+        type="text"
+        formControlName="answer"
+      />
     </div>
   </div>
 </form>

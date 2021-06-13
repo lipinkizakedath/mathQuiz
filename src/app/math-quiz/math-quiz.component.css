@@ -45,3 +45,13 @@
   background-color: transparent;
   margin-top: 10px;
 }
+
+.hightlight {
+  color: rgb(186, 240, 62);
+}
+
+.right-answer {
+  color: green;
+  font-weight: 500;
+  background-color: burlywood;
+}

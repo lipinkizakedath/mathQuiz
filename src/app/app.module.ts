@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { MathQuizComponent } from './math-quiz/math-quiz.component';
+import { ValueHighlighterDirective } from './value-highlighter.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MathQuizComponent
+    MathQuizComponent,
+    ValueHighlighterDirective
   ],
   imports: [
     BrowserModule,
